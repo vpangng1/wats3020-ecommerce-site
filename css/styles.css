@@ -1,0 +1,175 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+html, body {
+    background-color: #ffffff;
+    margin-top: 10px;
+}
+
+body .row {
+    margin-left: 10px;
+}
+
+.navbar .btn {
+    margin-top: 5px;
+}
+
+.jumbotron {
+    background-image: url('/images/CPU.jpg');
+    background-size: cover;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px black;
+}
+
+.thumbnail {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 20px;
+    height: 350px;
+    width: 250px;
+}
+
+.thumbnail img {
+    height: 60%;
+    width: 95%;
+    margin-top: .05em;
+}
+
+.thumbnail a {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+h3 {
+    text-align: center;
+}
+
+/*.btn {
+    
+}
+*/
+
+span {
+    float: right;
+    margin-top: 5px;
+}
+
+.shopping-cart {
+    display: inline-block;
+    background: url('/images/shoppingcart_24x24.png') no-repeat 0 0;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px 0 0;
+}
+
+button {
+    border: 1px solid #722A1B;
+    padding: 4px 14px;
+    background-color: #fff;
+    color: #722A1B;
+    text-transform: uppercase;
+    float: right;
+    margin: 5px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.maincontainer {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  background: green;
+}
+
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  background: yellow;
+}
+
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-visibility: hidden;
+  background: #fafafa;
+  color: #333;
+}
+
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-visibility: hidden;
+  background: #fafafa;
+  color: #333;
+  transform: rotateY(180deg);
+}
+
+
+.containerCard {
+ position: relative;
+ perspective: 1000;
+ margin: 0 0 20px 0;
+}
+
+.card {
+ width: 200px;
+ height: 50px;
+ position: relative;
+ transform-style: preserve-3d;
+ transition: 0.5s;
+ margin: 40px auto;
+}
+
+.containerCard:hover .card {
+ transform: rotateY(180deg);       
+}
+
+.face {
+ position: absolute;
+ backface-visibility: hidden;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ color: white;
+ line-height: 50px;
+ text-align: center;
+}
+
+.front {
+ background: red;
+ z-index: 10;
+}
+
+.containerCard:hover .front {
+ z-index: 0;
+}
+
+.back {
+ transform: rotateY(180deg);
+ background: green;
+}
+
