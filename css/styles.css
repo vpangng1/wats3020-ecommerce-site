@@ -70,7 +70,7 @@ span {
 
 .shopping-cart {
     display: inline-block;
-    background: url('/images/shoppingcart_24x24.png') no-repeat 0 0;
+    background: url('images/shoppingcart_24x24.png') no-repeat 0 0;
     width: 24px;
     height: 24px;
     margin: 0 10px 0 0;
