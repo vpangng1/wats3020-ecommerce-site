@@ -8,14 +8,15 @@
   <meta name="author" content="Victor Ng">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ComputerParts</title>
+  
+  <!--CSS bootstrap-->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 
   <!-- for jquery flip effect -->
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="js/jquery.flip.min.js"></script>
-  
-  <!-- jquery function for flip effect -->
+
   <script>
     $(function() {
       $(".flip").flip({
@@ -24,8 +25,8 @@
     });
   </script>
 </head>
-  
-  
+
+
 <body>
 
   <div class="page-top">
@@ -42,8 +43,7 @@
               <span><i class="shopping-cart"></i></span>
             </li>
             <li>
-              <!--<p><a class="btn btn-info btn-sm" href="index2.html" role="button">Checkout</a></p>-->
-              <button id="color-changer">Checkout</button>
+              <p><a class="btn btn-info btn-sm" href="#" role="button">Checkout</a></p>
             </li>
           </ul>
         </div>
@@ -60,155 +60,193 @@
 
     <div class="container" id="tourpackages-carousel">
 
+      <!--Beginning of Products-->
+
       <div class="row">
-        
-         <div class="col-md-4">
-           <div class="thumbnail">
+
+        <div class="col-md-4">
+          <div class="thumbnail">
             <div class="flip">
-           <div class="front">
-            <img src="images/camera.jpg" alt="camera">
-           </div>
-           <div class="back">
-             <br>
-             <br>
-             <p>The Nikon camera brings together robust stills capabilities along with apt movie and time-lapse recording.</p>
-             </h3>
-           </div>
-           </div>
-            <div class="caption">
+              <div class="front">
+                <img src="images/camera.jpg" alt="camera">
+                <span class="label label-info">$79.99</span>
+              </div>
+              <div class="back">
+                <br>
+                <br>
+                <p>The Nikon camera brings together robust stills capabilities along with apt movie and time-lapse recording.</p>
+                </h3>
+              </div>
+            </div>
+            <div class="caption centerText">
               <h4>Camera</h4>
             </div>
-            <p><a href="#" class="add-to-cart btn btn-warning btn-sm" role="button">Add to Cart</a></p>
-            </div>
-          </div>
-       
 
-          <div class="col-md-4">
-           <div class="thumbnail">
+            <h5 class="centerText" onclick="this.innerHTML='Saved!'">
+              Add to Wish List
+            </h5>
+
+            <p><a href="#" class="add-to-cart btn btn-warning btn-sm" role="button">Add to Cart</a></p>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="thumbnail">
             <div class="flip">
-           <div class="front">
-            <img src="images/headphones2.jpg" alt="headphones">
-           </div>
-           <div class="back">
-             <br>
-             <br>
-             <p>Delivering premium wireless sound, incredible comfort and advanced features, it can be your go to headphones all day.</p>
-             </h3>
-           </div>
-           </div>
-            <div class="caption">
+              <div class="front">
+                <img src="images/headphones2.jpg" alt="headphones">
+                <span class="label label-info">$59.99</span>
+              </div>
+              <div class="back">
+                <br>
+                <br>
+                <p>Delivering premium wireless sound, incredible comfort and advanced features, it can be your go to headphones all day.</p>
+                </h3>
+              </div>
+            </div>
+            <div class="caption centerText">
               <h4>Headphones</h4>
             </div>
-            <p><a href="#" class="add-to-cart btn btn-warning btn-sm" role="button">Add to Cart</a></p>
-            </div>
-          </div>
-        
 
-         <div class="col-md-4">
-           <div class="thumbnail">
-            <div class="flip">
-           <div class="front">
-            <img src="images/mouse.jpg" alt="mouse">
-           </div>
-           <div class="back">
-             <br>
-             <br>
-             <p>The mouse angle and height help place your wrist in a comfortable position to reduce pressure on carpal tunnel areas.</p>
-             </h3>
-           </div>
-           </div>
-            <div class="caption">
-              <h4>Mouse</h4>
-              <!--<p>The mouse angle and height help place your wrist in a comfortable position to reduce pressure on carpal tunnel areas.</p>-->
-            </div>
+            <h5 class="centerText" onclick="this.innerHTML='Saved!'">
+              Add to Wish List
+            </h5>
+
             <p><a href="#" class="add-to-cart btn btn-warning btn-sm" role="button">Add to Cart</a></p>
-            </div>
           </div>
-    
-             <div class="col-md-4">
-           <div class="thumbnail">
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="thumbnail">
             <div class="flip">
-           <div class="front">
-            <img src="images/drone.jpg" alt="drone">
-           </div>
-           <div class="back">
-             <br>
-             <br>
-             <p>Perfect for beginners or experienced drone operators, the drone features the reliability, intuitive controls, excellent image quality, and powerful flight performance.</p>
-             </h3>
-           </div>
-           </div>
-            <div class="caption">
+              <div class="front">
+                <img src="images/mouse.jpg" alt="mouse">
+                <span class="label label-info">$29.99</span>
+              </div>
+              <div class="back">
+                <br>
+                <br>
+                <p>The mouse angle and height help place your wrist in a comfortable position to reduce pressure on carpal tunnel areas.</p>
+                </h3>
+              </div>
+            </div>
+            <div class="caption centerText">
+              <h4>Mouse</h4>
+            </div>
+
+            <h5 class="centerText" onclick="this.innerHTML='Saved!'">
+              Add to Wish List
+            </h5>
+
+            <p><a href="#" class="add-to-cart btn btn-warning btn-sm" role="button">Add to Cart</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <div class="flip">
+              <div class="front">
+                <img src="images/drone.jpeg" alt="drone">
+                <span class="label label-info">$89.99</span>
+              </div>
+              <div class="back">
+                <br>
+                <br>
+                <p>Perfect for beginners or experienced drone operators, the drone features the reliability, intuitive controls, excellent image quality, and powerful flight performance.</p>
+                </h3>
+              </div>
+            </div>
+            <div class="caption centerText">
               <h4>Drone</h4>
             </div>
-            <p><a href="#" class="add-to-cart btn btn-warning btn-sm" role="button">Add to Cart</a></p>
-            </div>
-          </div>
-       
 
-          <div class="col-md-4">
-           <div class="thumbnail">
+            <h5 class="centerText" onclick="this.innerHTML='Saved!'">
+              Add to Wish List
+            </h5>
+
+            <p><a href="#" class="add-to-cart btn btn-warning btn-sm" role="button">Add to Cart</a></p>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="thumbnail">
             <div class="flip">
-           <div class="front">
-            <img src="images/harddrive.jpg" alt="harddrive">
-           </div>
-           <div class="back">
-             <br>
-             <br>
-             <p>Specifically designed for use in enterprise servers, datacenter servers, and storage systems.</p>
-             </h3>
-           </div>
-           </div>
-            <div class="caption">
+              <div class="front">
+                <img src="images/harddrive.jpg" alt="harddrive">
+                <span class="label label-info">$69.99</span>
+              </div>
+              <div class="back">
+                <br>
+                <br>
+                <p>Specifically designed for use in enterprise servers, datacenter servers, and storage systems.</p>
+                </h3>
+              </div>
+            </div>
+            <div class="caption centerText">
               <h4>HardDrive</h4>
             </div>
-            <p><a href="#" class="add-to-cart btn btn-warning btn-sm" role="button">Add to Cart</a></p>
-            </div>
-          </div>
-        
 
-         <div class="col-md-4">
-           <div class="thumbnail">
-            <div class="flip">
-           <div class="front">
-            <img src="images/headphones.jpg" alt="headphones">
-           </div>
-           <div class="back">
-             <br>
-             <br>
-             <p>Your ears and head will feel extremely comfortable, thanks to the ergonomic design.</p>
-             </h3>
-           </div>
-           </div>
-            <div class="caption">
-              <h4>Headphones</h4>
-              <!--<p>The mouse angle and height help place your wrist in a comfortable position to reduce pressure on carpal tunnel areas.</p>-->
-            </div>
+            <h5 class="centerText" onclick="this.innerHTML='Saved!'">
+              Add to Wish List
+            </h5>
+
             <p><a href="#" class="add-to-cart btn btn-warning btn-sm" role="button">Add to Cart</a></p>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <div class="flip">
+              <div class="front">
+                <img src="images/headphones.jpg" alt="headphones">
+                <span class="label label-info">$49.99</span>
+              </div>
+              <div class="back">
+                <br>
+                <br>
+                <p>Your ears and head will feel extremely comfortable, thanks to the ergonomic design.</p>
+                </h3>
+              </div>
             </div>
+            <div class="caption centerText">
+              <h4>Headphones</h4>
+            </div>
+
+            <h5 class="centerText" onclick="this.innerHTML='Saved!'">
+              Add to Wish List
+            </h5>
+
+            <p><a href="#" class="add-to-cart btn btn-warning btn-sm" role="button">Add to Cart</a></p>
           </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
   <!-- End row -->
 
-        <button class="buttonRipple">
+  <!--Contact Us Button -->
+
+  <button id="buttonRipple">
             Contact Us!
         </button>
-       
-     
-    
+
+
+
   <!-- End container -->
 
 
-<!-- javascript for ripple button effect -->
+  <!-- javascript for ripple button effect -->
   <script src="js/buttonRipple.js"></script>
 
-<!-- javascript for button color effect -->
+  <!-- javascript for button color effect -->
   <script src="js/buttonColor.js"></script>
 
-<!-- javascript for add to cart effect plus jquery plugins -->
+  <!-- javascript for add to cart effect plus jquery libraries -->
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/cart.js"></script>

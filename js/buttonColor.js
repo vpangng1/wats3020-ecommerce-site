@@ -1,6 +1,4 @@
-//javascript for changing the checkout button color when clicked
-
-let button = document.querySelector('#color-changer');
+let button = document.querySelector('#buttonRipple');
 
 function changeColor(event){
     if(event.target.style.backgroundColor === "orange"){
