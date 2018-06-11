@@ -58,10 +58,7 @@ h3 {
     text-align: center;
 }
 
-/*.btn {
-    
-}
-*/
+
 
 span {
     float: right;
@@ -92,88 +89,11 @@ button {
   text-align: center;
 }
 
-/*.maincontainer {
-  position: relative;
-  width: 250px;
-  height: 320px;
-  background: green;
+
+#color-changer {
+  background-color: orange;
 }
 
-.thecard {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: all 0.5s ease;
-  background: yellow;
-}
-
-.thefront {
-  position: absolute;
-  width: 100%;
-  height: 100px;
-  background-visibility: hidden;
-  background: #fafafa;
-  color: #333;
-}
-
-.theback {
-  position: absolute;
-  width: 100%;
-  height: 100px;
-  background-visibility: hidden;
-  background: #fafafa;
-  color: #333;
-  transform: rotateY(180deg);
-}
-
-
-.containerCard {
- position: relative;
- perspective: 1000;
- margin: 0 0 20px 0;
-}
-
-.card {
- width: 200px;
- height: 50px;
- position: relative;
- transform-style: preserve-3d;
- transition: 0.5s;
- margin: 40px auto;
-}
-
-.containerCard:hover .card {
- transform: rotateY(180deg);       
-}
-
-.face {
- position: absolute;
- backface-visibility: hidden;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- color: white;
- line-height: 50px;
- text-align: center;
-}
-
-.front {
- background: red;
- z-index: 10;
-}
-
-.containerCard:hover .front {
- z-index: 0;
-}
-
-.back {
- transform: rotateY(180deg);
- background: green;
-}
-
-*/
 .flip {
     height: 199px;
     width: 300px;
@@ -187,4 +107,38 @@ button {
     background: #2184cd;
     color: #fff;
     text-align: center;
+}
+
+
+
+.buttonRipple {
+    font-family: "Roboto";
+    font-size: 24px;
+    padding: 1em 2em;
+    margin: 3px;
+    border: 0;
+    outline: 0;
+    color: white;
+    background-color: #2196F3;
+    text-transform: uppercase;
+    border-radius: 0.15em;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+
+    overflow: hidden;
+    position: relative;
+}
+
+.buttonRipple .ripple {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(2.5);
+        opacity: 0;
+    }
 }

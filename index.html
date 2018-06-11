@@ -11,8 +11,11 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 
+  <!-- for jquery flip effect -->
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="js/jquery.flip.min.js"></script>
+  
+  <!-- jquery function for flip effect -->
   <script>
     $(function() {
       $(".flip").flip({
@@ -20,17 +23,18 @@
       });
     });
   </script>
-
 </head>
-
+  
+  
 <body>
-
 
   <div class="page-top">
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
@@ -38,7 +42,8 @@
               <span><i class="shopping-cart"></i></span>
             </li>
             <li>
-              <p><a class="btn btn-info btn-sm" href="checkout.html" role="button">Checkout</a></p>
+              <!--<p><a class="btn btn-info btn-sm" href="index2.html" role="button">Checkout</a></p>-->
+              <button id="color-changer">Checkout</button>
             </li>
           </ul>
         </div>
@@ -73,7 +78,7 @@
             <div class="caption">
               <h4>Camera</h4>
             </div>
-            <p><a href="#" class="add-to-cart btn btn-info btn-sm" role="button">Add to Cart</a></p>
+            <p><a href="#" class="add-to-cart btn btn-warning btn-sm" role="button">Add to Cart</a></p>
             </div>
           </div>
        
@@ -94,7 +99,7 @@
             <div class="caption">
               <h4>Headphones</h4>
             </div>
-            <p><a href="#" class="add-to-cart btn btn-info btn-sm" role="button">Add to Cart</a></p>
+            <p><a href="#" class="add-to-cart btn btn-warning btn-sm" role="button">Add to Cart</a></p>
             </div>
           </div>
         
@@ -116,7 +121,7 @@
               <h4>Mouse</h4>
               <!--<p>The mouse angle and height help place your wrist in a comfortable position to reduce pressure on carpal tunnel areas.</p>-->
             </div>
-            <p><a href="#" class="add-to-cart btn btn-info btn-sm" role="button">Add to Cart</a></p>
+            <p><a href="#" class="add-to-cart btn btn-warning btn-sm" role="button">Add to Cart</a></p>
             </div>
           </div>
     
@@ -129,14 +134,14 @@
            <div class="back">
              <br>
              <br>
-             <p>The Nikon camera brings together robust stills capabilities along with apt movie and time-lapse recording.</p>
+             <p>Perfect for beginners or experienced drone operators, the drone features the reliability, intuitive controls, excellent image quality, and powerful flight performance.</p>
              </h3>
            </div>
            </div>
             <div class="caption">
               <h4>Drone</h4>
             </div>
-            <p><a href="#" class="add-to-cart btn btn-info btn-sm" role="button">Add to Cart</a></p>
+            <p><a href="#" class="add-to-cart btn btn-warning btn-sm" role="button">Add to Cart</a></p>
             </div>
           </div>
        
@@ -150,14 +155,14 @@
            <div class="back">
              <br>
              <br>
-             <p>Delivering premium wireless sound, incredible comfort and advanced features, it can be your go to headphones all day.</p>
+             <p>Specifically designed for use in enterprise servers, datacenter servers, and storage systems.</p>
              </h3>
            </div>
            </div>
             <div class="caption">
-              <h4>Hard Disk Drive</h4>
+              <h4>HardDrive</h4>
             </div>
-            <p><a href="#" class="add-to-cart btn btn-info btn-sm" role="button">Add to Cart</a></p>
+            <p><a href="#" class="add-to-cart btn btn-warning btn-sm" role="button">Add to Cart</a></p>
             </div>
           </div>
         
@@ -171,7 +176,7 @@
            <div class="back">
              <br>
              <br>
-             <p>The mouse angle and height help place your wrist in a comfortable position to reduce pressure on carpal tunnel areas.</p>
+             <p>Your ears and head will feel extremely comfortable, thanks to the ergonomic design.</p>
              </h3>
            </div>
            </div>
@@ -179,91 +184,31 @@
               <h4>Headphones</h4>
               <!--<p>The mouse angle and height help place your wrist in a comfortable position to reduce pressure on carpal tunnel areas.</p>-->
             </div>
-            <p><a href="#" class="add-to-cart btn btn-info btn-sm" role="button">Add to Cart</a></p>
+            <p><a href="#" class="add-to-cart btn btn-warning btn-sm" role="button">Add to Cart</a></p>
             </div>
           </div>
-
-         <div class="col-md-4">
-           <div class="thumbnail">
-            <div class="flip">
-           <div class="front">
-            <img src="images/CPU.jpg" alt="CPU">
-           </div>
-           <div class="back">
-             <br>
-             <br>
-             <p>The Nikon camera brings together robust stills capabilities along with apt movie and time-lapse recording.</p>
-             </h3>
-           </div>
-           </div>
-            <div class="caption">
-              <h4>CPU</h4>
-            </div>
-            <p><a href="#" class="add-to-cart btn btn-info btn-sm" role="button">Add to Cart</a></p>
-            </div>
-          </div>
-       
-
-          <div class="col-md-4">
-           <div class="thumbnail">
-            <div class="flip">
-           <div class="front">
-            <img src="images/camera.jpg" alt="camera">
-           </div>
-           <div class="back">
-             <br>
-             <br>
-             <p>Delivering premium wireless sound, incredible comfort and advanced features, it can be your go to headphones all day.</p>
-             </h3>
-           </div>
-           </div>
-            <div class="caption">
-              <h4>Camera</h4>
-            </div>
-            <p><a href="#" class="add-to-cart btn btn-info btn-sm" role="button">Add to Cart</a></p>
-            </div>
-          </div>
-        
-
-         <div class="col-md-4">
-           <div class="thumbnail">
-            <div class="flip">
-           <div class="front">
-            <img src="images/mouse.jpg" alt="mouse">
-           </div>
-           <div class="back">
-             <br>
-             <br>
-             <p>The mouse angle and height help place your wrist in a comfortable position to reduce pressure on carpal tunnel areas.</p>
-             </h3>
-           </div>
-           </div>
-            <div class="caption">
-              <h4>Mouse</h4>
-              <!--<p>The mouse angle and height help place your wrist in a comfortable position to reduce pressure on carpal tunnel areas.</p>-->
-            </div>
-            <p><a href="#" class="add-to-cart btn btn-info btn-sm" role="button">Add to Cart</a></p>
-            </div>
-          </div>
-
-
-    
         </div>
-        
-    
-        
-        
       </div>
     </div>
   </div>
   <!-- End row -->
 
-  
+        <button class="buttonRipple">
+            Contact Us!
+        </button>
+       
+     
     
   <!-- End container -->
 
 
-  <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+<!-- javascript for ripple button effect -->
+  <script src="js/buttonRipple.js"></script>
+
+<!-- javascript for button color effect -->
+  <script src="js/buttonColor.js"></script>
+
+<!-- javascript for add to cart effect plus jquery plugins -->
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/cart.js"></script>

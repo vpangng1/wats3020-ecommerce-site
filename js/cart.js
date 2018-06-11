@@ -2,11 +2,11 @@ $(document).ready(function() {
     console.log("ready!");
 
     $('.add-to-cart').on('click', function() {
-        let cart = $('.shopping-cart');
-        let imgtodrag = $(this).parents('.thumbnail').find("img").eq(0);
+        var cart = $('.shopping-cart');
+        var imgtodrag = $(this).parents('.thumbnail').find("img").eq(0);
         if (imgtodrag) {
             // Creates a clone of the image to move to shopping cart
-            let imgclone = imgtodrag.clone()
+            var imgclone = imgtodrag.clone()
                 .offset({
                     top: imgtodrag.offset().top,
                     left: imgtodrag.offset().left
